@@ -5,7 +5,7 @@ import { BondPlatformConfig } from '../interface/config';
 import { Version } from './Version';
 
 export class Bond {
-  // Helper to sanitze the config object into bond objects
+  // Helper to sanitize the config object into bond objects
   public static objects(platform: BondPlatform): Bond[] {
     const config = platform.config as BondPlatformConfig;
     const bondData: BondConfig[] = config.bonds;
@@ -36,7 +36,7 @@ export class Bond {
     private readonly platform: BondPlatform,
     config: BondConfig) {
     this.config = config;
-    this.api = new BondApi(platform, config.token, config.ip_address);
+    this.api = new BondApi(platform, config.token, config.ip_address, config.bondId);
   }
 
   public updateDeviceIds(): Promise<void> {

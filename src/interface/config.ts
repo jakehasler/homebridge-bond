@@ -3,6 +3,7 @@ import { PlatformConfig } from 'homebridge';
 export interface BondConfig {
   ip_address: string;
   token: string;
+  bondId: string;
   hide_device_ids?: string[];
 }
 

@@ -49,7 +49,7 @@ For the best experience setting up this plugin, please use [homebridge-config-ui
 
 ### Basic Configuration
 
-To get your Bond IP Address, follow the instructions [here](https://github.com/aarons22/homebridge-bond/wiki/Get-Bond-IP-Address).
+To get your Bond IP Address, follow the instructions [here](https://github.com/aarons22/homebridge-bond/wiki/Get-Bond-IP-Address). Additionally, you can bypass adding your IP address and simply put your Bond ID from the app. This will make it so that the IP gets resolved from the hostname of the Bond, which includes the Bond ID.
 
 `BOND_TOKEN` (Local token) can be found in the app. Go to your Bond settings:
 

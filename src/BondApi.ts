@@ -21,12 +21,14 @@ const flakeIdGen = new FlakeId();
 export class BondApi {
   private bondToken: string;
   private uri: BondUri;
+  private bondId: string;
 
   constructor(
     private readonly platform: BondPlatform,
     bondToken: string,
-    ipAddress: string) {
+    ipAddress: string, bondId: string) {
     this.bondToken = bondToken;
+    this.bondId = bondId;
     this.uri = new BondUri(ipAddress);
 
     axiosRetry(axios, { retries: 10, retryDelay: axiosRetry.exponentialDelay });

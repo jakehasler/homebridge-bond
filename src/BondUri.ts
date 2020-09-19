@@ -20,7 +20,7 @@ export class BondUri {
   public state(id: string): string {
     return `http://${this.bondIP}/v2/devices/${id}/state`;
   }
-  
+
   public action(id: string, action: Action): string {
     return `http://${this.bondIP}/v2/devices/${id}/actions/${action}`;
   }
